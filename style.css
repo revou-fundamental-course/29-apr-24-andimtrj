@@ -56,3 +56,57 @@ body{
 .navbar-menu li a:hover {
   text-decoration: underline;
 }
+
+.home-container{
+  padding-right: 50px;
+  padding-left: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.title-container{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+}
+
+.title-container h1, .title-container h4{
+  margin-top: 15px;
+}
+
+.homeContent-container{
+  display: flex;
+  gap: 10px;
+}
+
+.contactUs-container{
+  background-color: salmon;
+  width: 50%;
+}
+
+.carousel {
+  width: 100%;
+  /* overflow: hidden; */
+  /* position: relative; */
+}
+
+.slide {
+  width: 40%;
+  height: 70vh;
+  display: none;
+}
+
+.slide img {
+  width: 100%;
+}
+
+.active {
+  display: block;
+  transform: translateX(0);
+}
+
+.next {
+  transform: translateX(-100%);
+}
