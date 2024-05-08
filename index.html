@@ -13,8 +13,7 @@
     <title>Travel Hub</title>
   </head>
   <body>
-    <script src="js/index.js"></script>
-    <nav class="navbar font-lt">
+    <nav class="navbar font-md">
       <a href="#" class="navbar-brand">Travel Hub</a>
       <ul class="navbar-menu">
         <li><a href="#">Home</a></li>
@@ -27,29 +26,121 @@
     <div class="home-container">
       <!-- Title -->
       <div class="title-container">
-        <h1 class="font-lg">Your Trusted Travel Agent's</h1>
-        <h4 class="font-lt">Your happiness is our happiness</h4>
+        <h1 class="font-lg" style="font-size: 75px">
+          Your Trusted Travel Agent's
+        </h1>
+        <h4 class="font-lt" style="font-size: 30px">
+          Your happiness is our happiness
+        </h4>
       </div>
 
       <div class="homeContent-container">
         <!-- Corusel -->
-        <div class="carousel">
-          <div class="slide">
-            <img src="src/slide1.jpg" alt="Image 1" />
+        <div class="slideshow-container">
+          <!-- Full-width images with number and caption text -->
+          <div class="mySlides fade">
+            <img src="src/slide1.png" class="slider-img" />
           </div>
-          <div class="slide">
-            <img src="src/slide2.jpg" alt="Image 2" />
+          <div class="mySlides fade">
+            <img src="src/slide2.png" class="slider-img" />
           </div>
-          <div class="slide">
-            <img src="src/slide3.jpg" alt="Image 3" />
+          <div class="mySlides fade">
+            <img src="src/slide3.png" class="slider-img" />
           </div>
         </div>
 
         <!-- Form -->
         <div class="contactUs-container">
-          <h1 class="font-lg">Contact Us</h1>
+          <h1 class="font-lg" style="font-size: 45px">Contact Us</h1>
+          <h4 class="font-lt" style="font-size: 14px">
+            Sales akan menghubungi anda 1x24 jam setelah data kami terima.
+          </h4>
+          <form action="" class="form-container font-md">
+            <label for="name">Your name:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="First and last name"
+            />
+            <label for="email">Email Address:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="example@email.com"
+            />
+            <label for="interested">What are you interested in?</label>
+            <select name="interested" id="interested">
+              <option value="">Select Option</option>
+              <option value="flight">Flight</option>
+              <option value="hotel">Hotel</option>
+              <option value="car">Car Rental</option>
+            </select>
+            <button class="btn font-md">Send!</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="underHome-container">
+        <div class="testimoni-container">
+          <h5 class="font-lt">
+            "Berlibur bersama Travel Hub sungguh menyenangkan! Layanan yang
+            ramah dan destinasi yang menakjubkan membuat pengalaman liburan saya
+            tak terlupakan. Terima kasih Travel Hub!"
+          </h5>
+          <div style="display: flex; margin-top: 15px">
+            <img src="/src/user.png" alt="user" width="60px" />
+            <div class="testimoni-user">
+              <h3 class="font-md">Hirai Yuka</h3>
+              <h4 class="font-md" style="opacity: 0.5">Web Developer</h4>
+            </div>
+          </div>
+        </div>
+        <div class="testimoni-container">
+          <h5 class="font-lt">
+            "Travel Hub memberikan pengalaman liburan yang luar biasa! Dari
+            pelayanan yang profesional hingga paket perjalanan yang menarik,
+            semuanya sangat memuaskan!"
+          </h5>
+          <div style="display: flex; margin-top: 15px">
+            <img src="/src/user.png" alt="user" width="60px" />
+            <div class="testimoni-user">
+              <h3 class="font-md">Andi Aqua</h3>
+              <h4 class="font-md" style="opacity: 0.5">Content Creator</h4>
+            </div>
+          </div>
+        </div>
+        <div class="testimoni-container">
+          <h5 class="font-lt">
+            "Travel Hub adalah pilihan terbaik untuk liburan Anda! Layanan yang
+            ramah, paket perjalanan yang menarik, dan pengalaman yang tak
+            terlupakan. Saya sangat puas dengan perjalanan saya bersama mereka."
+          </h5>
+          <div style="display: flex; margin-top: 15px">
+            <img src="/src/user.png" alt="user" width="60px" />
+            <div class="testimoni-user">
+              <h3 class="font-md">James Duncan</h3>
+              <h4 class="font-md" style="opacity: 0.5">Basketball Player</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="underHome2-container">
+        <img src="./src/promo.jpg" alt="" />
+        <div class="promo-container">
+          <h1 class="font-lg">Your Trusted Travel Agent's Your Happiness is Our Priority!</h1>
+          <ul class="font-lt">
+            <li>Personalized Itineraries: Tailored just for you.</li>
+            <li>Stress-Free Booking: We handle the details</li>
+            <li>Exclusive Deals: Unlock unbeatable discounts.</li>
+            <li>Expert Guidance: Our knowledgeable team provides insider tips and recommendations.</li>
+            <li>24/7 Support: Assistance is available round-the-clock, ensuring peace of mind throughout your journey.</li>
+          </ul>
         </div>
       </div>
     </div>
+    <script src="js/index.js"></script>
   </body>
 </html>

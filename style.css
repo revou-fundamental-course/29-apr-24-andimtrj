@@ -1,4 +1,4 @@
-body{
+body {
   margin: 0;
   padding: 0;
 }
@@ -7,23 +7,25 @@ body{
   font-family: "Poppins", sans-serif;
   font-weight: 300;
   font-style: normal;
+  margin: 0;
 }
 
 .font-md {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-style: normal;
+  margin: 0;
 }
 
 .font-lg {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-style: normal;
+  margin: 0;
 }
 
 .navbar {
-  border-bottom: 1px solid black;
-  padding: 10px 50px;
+  padding: 10px 5vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -57,56 +59,183 @@ body{
   text-decoration: underline;
 }
 
-.home-container{
-  padding-right: 50px;
-  padding-left: 50px;
+.home-container {
+  padding-right: 5vw;
+  padding-left: 5vw;
   display: flex;
   flex-direction: column;
 }
 
-.title-container{
-  text-align: center;
+.title-container {
+  width: auto;
+  color: white;
+  margin-top: 30px;
+  text-align: start;
   display: flex;
+  padding-left: 30px;
   flex-direction: column;
-  width: 100%;
   justify-content: center;
+  position: absolute;
+  z-index: 1;
 }
 
-.title-container h1, .title-container h4{
-  margin-top: 15px;
+.title-container h1,
+.title-container h4 {
+  margin: 0;
 }
 
-.homeContent-container{
+.homeContent-container {
   display: flex;
-  gap: 10px;
+  gap: 5vw;
+  justify-content: space-between;
 }
 
-.contactUs-container{
-  background-color: salmon;
-  width: 50%;
+.contactUs-container {
+  background-color: white;
+  padding: 24px 35px;
+  width: 20%;
+  border-radius: 30px;
+  position: absolute;
+  right: 7vw;
+  transform: translateY(55%);
 }
 
-.carousel {
-  width: 100%;
-  /* overflow: hidden; */
-  /* position: relative; */
+/* Slideshow */
+.slideshow-container {
+  width: auto;
 }
-
-.slide {
-  width: 40%;
-  height: 70vh;
+.mySlides {
   display: none;
 }
-
-.slide img {
+.slider-img {
   width: 100%;
+  border-radius: 50px;
 }
 
-.active {
-  display: block;
-  transform: translateX(0);
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
-.next {
-  transform: translateX(-100%);
+.form-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
 }
+
+.form-container input {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 2px solid black;
+  border-radius: 10px;
+  box-shadow: 3px 3px 0px 1px rgba(0, 0, 0, 1);
+  -webkit-box-shadow: 3px 3px 0px 1px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 3px 3px 0px 1px rgba(0, 0, 0, 1);
+}
+
+.form-container select {
+  padding: 10px;
+  margin-bottom: 40px;
+  border: 2px solid black;
+  border-radius: 10px;
+  box-shadow: 3px 3px 0px 1px rgba(0, 0, 0, 1);
+  -webkit-box-shadow: 3px 3px 0px 1px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 3px 3px 0px 1px rgba(0, 0, 0, 1);
+}
+
+.btn {
+  width: 100%;
+  height: 60px;
+  font-size: 1.1em;
+  cursor: pointer;
+  background-color: #171717;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.4s;
+}
+
+.btn:hover {
+  border-radius: 5px;
+  transform: translateY(-10px);
+  box-shadow: 0 7px 0 -2px #f85959, 0 15px 0 -4px #39a2db,
+    0 16px 10px -3px #39a2db;
+}
+
+.btn:active {
+  transition: all 0.2s;
+  transform: translateY(-5px);
+  box-shadow: 0 2px 0 -2px #f85959, 0 8px 0 -4px #39a2db,
+    0 12px 10px -3px #39a2db;
+}
+
+.underHome-container {
+  display: flex;
+  margin-top: 10px;
+  justify-content: space-between;
+}
+
+.testimoni-container {
+  max-width: 30%;
+  /* min-width: 20%; */
+  color: #171717;
+  background-color: white;
+  padding: 20px 20px;
+  border-radius: 30px;
+  margin-bottom: 20px;
+  border: 2px solid black;
+  box-shadow: 8px 8px 0px 0px rgba(0,0,0,1);
+-webkit-box-shadow: 8px 8px 0px 0px rgba(0,0,0,1);
+-moz-box-shadow: 8px 8px 0px 0px rgba(0,0,0,1);
+}
+
+.testimoni-container img {
+  margin-right: 20px;
+  opacity: 0.4;
+}
+
+.testimoni-container h5 {
+  color: black;
+  font-style: italic;
+  text-align: justify;
+  font-size: 18px;
+}
+
+.testimoni-user {
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+}
+
+.underHome2-container{
+  text-align: justify;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.underHome2-container img{
+  width: 100%;
+  max-width: 70%;
+  border-radius: 40px;
+}
+
+.promo-container{
+  color: black;
+  background-color: #eeeeee;
+  padding: 40px;
+  border-radius: 40px;
+}
+
+.promo-container ul{
+  margin-top: 10px;
+  text-align: justify;
+  /* list-style-type: none; */
+  padding-left: 20px;
+}
+
