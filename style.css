@@ -188,9 +188,9 @@ body {
   border-radius: 30px;
   margin-bottom: 20px;
   border: 2px solid black;
-  box-shadow: 8px 8px 0px 0px rgba(0,0,0,1);
--webkit-box-shadow: 8px 8px 0px 0px rgba(0,0,0,1);
--moz-box-shadow: 8px 8px 0px 0px rgba(0,0,0,1);
+  box-shadow: 8px 8px 0px 0px rgba(0, 0, 0, 1);
+  -webkit-box-shadow: 8px 8px 0px 0px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 8px 8px 0px 0px rgba(0, 0, 0, 1);
 }
 
 .testimoni-container img {
@@ -211,7 +211,7 @@ body {
   flex-direction: column;
 }
 
-.underHome2-container{
+.underHome2-container {
   text-align: justify;
   display: flex;
   justify-content: space-between;
@@ -219,23 +219,115 @@ body {
   margin-bottom: 10px;
 }
 
-.underHome2-container img{
+.underHome2-container img {
   width: 100%;
   max-width: 70%;
   border-radius: 40px;
 }
 
-.promo-container{
+.promo-container {
   color: black;
   background-color: #eeeeee;
   padding: 40px;
   border-radius: 40px;
 }
 
-.promo-container ul{
+.promo-container ul {
   margin-top: 10px;
   text-align: justify;
   /* list-style-type: none; */
   padding-left: 20px;
 }
 
+.package-container {
+  padding-right: 5vw;
+  padding-left: 5vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.title-package {
+  background-color: #171717;
+  border-radius: 30px;
+  color: white;
+  font-size: x-large;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  margin-bottom: 10px;
+}
+
+.package {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.satu-package {
+  padding: 10px;
+  background-color: #eeeeee;
+  display: flex;
+  width: 100%;
+  border-radius: 15px;
+}
+
+.package img {
+  border-radius: 20px;
+  max-width: 50%;
+  padding-right: 10px;
+}
+
+.package-desc {
+  width: 50%;
+  text-align: justify;
+}
+
+.package-desc h3 {
+  font-size: x-large;
+}
+
+.call-container {
+  padding: 30px;
+  margin: 0 5vw;
+  border: 2px solid black;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  box-shadow: 8px 8px 0px 0px rgba(0, 0, 0, 1);
+  -webkit-box-shadow: 8px 8px 0px 0px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 8px 8px 0px 0px rgba(0, 0, 0, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.call-container p{
+  margin-top: 5px;
+  font-size: large;
+  max-width: 60%;
+  text-align: center;
+  margin: 20px;
+}
+
+.call-btn{
+  max-width: 30%;
+}
+
+footer {
+  margin-right: 5vw;
+  margin-left: 5vw;
+  padding: 10px 30px;
+  display: flex;
+  background-color: #171717;
+  color: white;
+  border-radius: 15px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-content {
+  display: flex;
+  gap: 10px;
+}
